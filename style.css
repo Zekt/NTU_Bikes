@@ -14,7 +14,7 @@ nav{
 
 .bar_elem{
 	margin: 0;
-	background: silver;
+	border-radius: 10px;
 }
 
 .nav a{
@@ -23,8 +23,41 @@ nav{
 	padding: 0px;
 }
 
+.bar_elem:link {
+    text-decoration: none;
+	color: white;
+	background: black;
+}
+
+.bar_elem:visited {
+    text-decoration: none;
+	color: white;
+	background: black;
+}
+
+.bar_elem:hover {
+    text-decoration: none;
+	color: black;
+	background: silver;
+	-webkit-animation: mouseon 0.5s;
+}
+
+@-webkit-keyframes mouseon{
+	from{background: black; color: white;}
+	to{background: silver; color:black;}
+}
+
+.bar_elem:active {
+    text-decoration: underline;
+	coolor: white;
+}
+
 .basic{
 	background: white;
+}
+
+#sec1{
+	height:100vh;
 }
 
 .intro{
@@ -32,6 +65,11 @@ nav{
 	margin-left: 30%;
 	margin-right: 30%;
 	padding-top: 40vh;
+}
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
 }
 
 body{
@@ -45,8 +83,8 @@ body{
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: visible; 
-	margin-left:5%;
-	margin-right:5%;
+	margin-left:3%;
+	margin-right:3%;
 }
 
 .parallax::-webkit-scrollbar{
@@ -54,9 +92,9 @@ body{
 }
 
 .layer{
-	padding:300vh 0 300vh 0vh;
+//	padding:300vh 0 300vh 0vh;
 	position: absolute;
-	top: 200vh;
+//	top: 200vh;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -66,73 +104,9 @@ body{
 .bike1{
 	-webkit-transform: translateZ(0px);
 	transform: translateZ(0px);
-	left: -30%;
-	padding-top: 40%;
-}
-
-.bike2{
-	-webkit-transform: translateZ(-1px);
-	transform: translateZ(-1px);
-	padding-left: 50%;
-	padding-top: 10%;
-}
-
-.bike3{
-	-webkit-transform: translateZ(-2px);
-	transform: translateZ(-2px);
-	padding-left: 30%;
-	padding-top: 50%; 
-}
-
-.bike4{
-	-webkit-transform: translateZ(-0.5px);
-	transform: translateZ(-0.5px);
-	padding-left: 0%;
-	padding-top: 60%;
-}
-
-.bike5{
-	-webkit-transform: translateZ(-1.5px);
-	transform: translateZ(-1.5px);
-	padding-left: 0%;
+	height: 50%;
+	width: 50%;
+	top: 20%;
+	left: 0%;
 	padding-top: 0%;
-}
-
-.ballon1{
-	-webkit-transform: translateZ(-0.5px);
-	transform: translateZ(-0.5px);
-	padding-left: 10%;
-	padding-top: 60%;
-}
-
-.ballon2{
-	-webkit-transform: translateZ(-1.5px);
-	transform: translateZ(-1.5px);
-	padding-left: 0%;
-	padding-top: 40%;
-}
-
-.ballon3{
-	-webkit-transform: translateZ(-2.5px);
-	transform: translateZ(-2.5px);
-	padding-left: 0%;
-	padding-top: 0%;
-}
-
-.ballon4{
-	-webkit-transform: translateZ(-1px);
-	transform: translateZ(-1px);
-	padding-left: 70%;
-	padding-top: 40%;
-}
-
-.ballon5{
-	-webkit-transform: translateZ(-2px);
-	transform: translateZ(-2px);
-	padding-left: 40%;
-	padding-top: 20%;
-}
-
-#TheBike{
-	margin-top: 400vh;
 }
