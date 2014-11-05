@@ -1,19 +1,19 @@
 nav{
 	background: black;
 	color: white;
-	font-size: 2em;
-	border:1px solid black;
-    border-width: 1px 0;
+	font-size: 1.5em;
 	-webkit-user-select: none;
 	list-style: none;
 	margin: auto auto; left: 0%; right: 0%;
-	padding: 0;
+	padding: 0.5em;
 	text-align: center;
 	position: fixed;
 	z-index: 1;
 }
 
 .bar_elem{
+	padding-left: 1em;
+	padding-right: 1em;
 	margin: 0;
 	border-radius: 10px;
 	width: 5em;
@@ -72,14 +72,13 @@ nav{
 	font-size: 1em;
 }
 
-.stop-scrolling {
-	height: 100%;
-	overflow: hidden;
-}
-
 body{
 	margin: 0;
 	background: black;
+}
+
+::-webkit-scrollbar{
+	display: none;
 }
 
 .section{
@@ -92,12 +91,8 @@ body{
 	margin-right:3%;
 }
 
-.section:-webkit-scrollbar{
-	display:none;
-}
-
 #sec1{
-	background: url('pictures/NTU.jpg');
+	background: url('pictures/NTU.jpg') no-repeat ;
 	background-height: 100vh;
 	background-position: center;
 	background-attachment: fixed;
@@ -107,8 +102,23 @@ body{
 	background: url('pictures/map.png') no-repeat;
 	background-size:100%;
 	background-position: top;
+	background-attachment: fixed;
 	margin-top:0;
 }
+
+#sec3{
+	background: url('pictures/bikes.jpg') no-repeat;
+	background-height: 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#cover{
+	height: 100vh;
+	width: 100vw;
+	background: rgba(255,255,255,0.5);
+}
+
 
 .store{
 	display: table-cell;
@@ -120,16 +130,17 @@ body{
 	text-align: center;
 	height: 8vh;
 	width: 8vh;
-	background: rgba(0,255,255,0.6);
-	border: blue;
+	background: rgba(255,255,255,0.6);
+	border: solid 0.1em red;
 	border-radius: 50%;
-	-webkit-transition: width 0.7s, height 0.7s, border-radius 0.7s;
+	-webkit-transition: width 0.5s, height 0.5s, border-radius 0.5s, padding 0.5s;
 }
 
 .store:hover{
 	width: 30vw;
 	height: 30vh;
 	border-radius: 5%;
+	padding: 1%;
 }
 
 #intro2{
@@ -148,21 +159,9 @@ body{
 	right: 15%;
 }
 
-#bike191:hover{
-	width: 30vw;
-	height: 30vh;
-	border-radius: 5%;
-}
-
 #water{
 	bottom: 12%;
 	left: 12%;
-}
-
-#water:hover{
-	width: 30vw;
-	height: 30vh;
-	border-radius: 5%;
 }
 
 #fu{
@@ -170,14 +169,8 @@ body{
 	right: 38%;
 }
 
-#fu:hover{
-	width: 30vw;
-	height: 30vh;
-	border-radius: 5%;
-}
-
 #man{
 	position: absolute;
-	bottom: 33%;
+	top: 58%;
 	right: 9%;
 }
