@@ -38,10 +38,11 @@ nav{
 }
 
 .bar_elem:hover {
+	cursor: pointer;
     text-decoration: none;
 	color: black;
 	background: silver;
-	-webkit-animation: mouseon 0.2s;
+	-webkit-animation: mouseon 0.3s;
 }
 
 @-webkit-keyframes mouseon{
@@ -59,17 +60,14 @@ nav{
 }
 
 .section{
+	margin: 0;
 	height: 100vh;
 }
 
 .intro{
-	margin-left: 10%;
-	margin-right: 60%;
+	left: 10%;
+	right: 60%;
 	margin-top: 50vh;
-	padding: 1em;
-	border-radius: 1em;
-	background: rgba(255,255,255,0.6);
-	font-size: 1em;
 }
 
 body{
@@ -92,7 +90,8 @@ body{
 }
 
 #sec1{
-	background: url('pictures/NTU.jpg') no-repeat ;
+	background: url('pictures/NTU.jpg');
+	background-size: cover;
 	background-height: 100vh;
 	background-position: center;
 	background-attachment: fixed;
@@ -100,25 +99,88 @@ body{
 
 #sec2{
 	background: url('pictures/map.png') no-repeat;
-	background-size:100%;
 	background-position: top;
+	background-size: 100% 100%;
 	background-attachment: fixed;
 	margin-top:0;
 }
 
 #sec3{
-	background: url('pictures/bikes.jpg') no-repeat;
-	background-height: 100%;
+	background: url('pictures/bikes.jpg');
+	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 }
 
-#cover{
+#sec4{
+	background: url('pictures/abe.jpg');
+	background-size: cover;
+	background-position: right;
+	background-attachment: fixed;
+}
+
+#sec5{
+	background: url('pictures/road.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.cover{
+	margin: 0;
 	height: 100vh;
 	width: 100vw;
 	background: rgba(255,255,255,0.5);
 }
 
+.block{
+	position:absolute;
+	background: rgba(255,255,255,0.5);
+	padding: 2%;
+	border-radius: 1em;
+}
+
+#lot{
+	position: absolute;
+	top: 30vh;
+	left: 45vw;
+	width: 40vw;
+	border-radius: 1em;
+}
+
+#rules{
+	top: 20vh;
+	left:10vw;
+	width: 25vw;
+}
+
+#ask{
+	top:75vh;
+	left:10vw;
+}
+
+#hang{
+	top: 15vh;
+	left: 5vw;
+	width: 22vw;
+}
+
+#abe{
+	top:30vh;
+	left:35vw;
+	width:22vw;
+}
+
+#moral{
+	top: 20vh;
+	left: 10vw;
+	width: 20vw;
+}
+
+#ref{
+	top: 60vh;
+	left: 60vw;
+	width: 20vw;
+}
 
 .store{
 	display: table-cell;
@@ -137,8 +199,8 @@ body{
 }
 
 .store:hover{
-	width: 30vw;
-	height: 30vh;
+	width: 25em;
+	height: 15em;
 	border-radius: 5%;
 	padding: 1%;
 }
@@ -156,21 +218,22 @@ body{
 
 #bike191{
 	top: 5%;
-	right: 15%;
+	right: 13%;
+	z-index: 1;
 }
 
 #water{
-	bottom: 12%;
+	bottom: 25%;
 	left: 12%;
 }
 
 #fu{
-	bottom: 49%;
+	bottom: 55%;
 	right: 38%;
 }
 
 #man{
 	position: absolute;
-	top: 58%;
-	right: 9%;
+	top: 50%;
+	right: 7%;
 }

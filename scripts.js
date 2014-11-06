@@ -32,6 +32,10 @@ function disable_scroll() {
 
 
 $(function(){
+	$(window).load(function(){
+		$('html,body').animate({
+			scrollTop: $('#sec1').offset().top}, 700);
+		});
 	disable_scroll();
 	$("#up").click(function(){
 		if(index == 0)
