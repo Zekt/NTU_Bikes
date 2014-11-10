@@ -1,0 +1,250 @@
+nav{
+	background: black;
+	color: white;
+	font-size: 1.5em;
+	-webkit-user-select: none;
+	list-style: none;
+	margin: auto auto; left: 0%; right: 0%;
+	padding: 0.5em;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+}
+
+.bar_elem{
+	padding-left: 1em;
+	padding-right: 1em;
+	margin: 0;
+	border-radius: 10px;
+	width: 5em;
+}
+
+.nav a{
+	display: inline-block;
+	margin: 0;
+	padding: 0px;
+}
+
+.bar_elem:link {
+    text-decoration: none;
+	color: white;
+	background: black;
+}
+
+.bar_elem:visited {
+    text-decoration: none;
+	color: white;
+	background: black;
+}
+
+.bar_elem:hover {
+	cursor: pointer;
+    text-decoration: none;
+	color: black;
+	background: silver;
+	-webkit-animation: mouseon 0.3s;
+}
+
+@-webkit-keyframes mouseon{
+	from{background: black; color: white;}
+	to{background: silver; color:black;}
+}
+
+.bar_elem:active {
+    text-decoration: none;
+	background: gray;	
+}
+
+.basic{
+	background: white;
+}
+
+.section{
+	margin: 0;
+	height: 100vh;
+}
+
+.intro{
+	left: 10%;
+	right: 60%;
+	margin-top: 50vh;
+}
+
+body{
+	margin: 0;
+	background: black;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+::scrollbar{
+	display: none;
+}
+
+.section{
+	-webkit-perspective: 1px;
+	perspective: 1px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: visible; 
+	margin-left:3%;
+	margin-right:3%;
+}
+
+#sec1{
+	background: url('pictures/NTU.jpg');
+	background-size: cover;
+	background-height: 100vh;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#sec2{
+	background: url('pictures/map.png') no-repeat;
+	background-position: top;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	margin-top:0;
+}
+
+#sec3{
+	background: url('pictures/bikes.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#sec4{
+	background: url('pictures/abe.jpg');
+	background-size: cover;
+	background-position: right;
+	background-attachment: fixed;
+}
+
+#sec5{
+	background: url('pictures/road.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.cover{
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	background: rgba(255,255,255,0.5);
+}
+
+.block{
+	position:absolute;
+	background: rgba(255,255,255,0.5);
+	padding: 2%;
+	border-radius: 1em;
+}
+
+#lot{
+	position: absolute;
+	top: 30vh;
+	left: 45vw;
+	width: 40vw;
+	border-radius: 1em;
+}
+
+#rules{
+	top: 20vh;
+	left:10vw;
+	width: 25vw;
+}
+
+#ask{
+	top:15vh;
+	left:5vw;
+}
+
+#hang{
+	top: 15vh;
+	left: 42vw;
+	width: 22vw;
+}
+
+#abe{
+	top:38vh;
+	left:7vw;
+	width:22vw;
+}
+
+#moral{
+	top: 20vh;
+	left: 10vw;
+	width: 20vw;
+}
+
+#ref{
+	top: 60vh;
+	left: 60vw;
+	width: 20vw;
+}
+
+.store{
+	display: table-cell;
+	position: absolute;
+	overflow: hidden;
+	font-size: 1em;
+	text-color: white;
+	vertical-align: middle;
+	text-align: center;
+	height: 8vh;
+	width: 8vh;
+	background: rgba(255,255,255,0.6);
+	border: solid 0.1em red;
+	border-radius: 50%;
+	-webkit-transition: width 0.5s, height 0.5s, border-radius 0.5s, padding 0.5s;
+}
+
+.store:hover{
+	width: 25em;
+	height: 15em;
+	border-radius: 5%;
+	padding: 1%;
+}
+
+#intro2{
+	position: absolute;
+	font-size: 1.3em;
+	top: 60%;
+	left:40%;
+	width: 20%;
+	padding: 1%;
+	border-radius: 20%;
+	background: rgba(255,255,255,0.6);
+}
+
+#bike191{
+	top: 5%;
+	right: 13%;
+	z-index: 1;
+}
+
+#water{
+	bottom: 25%;
+	left: 12%;
+}
+
+#fu{
+	bottom: 55%;
+	right: 38%;
+}
+
+#man{
+	position: absolute;
+	top: 50%;
+	right: 7%;
+}
+
+#bike_logo{
+	size: 50%;
+	position: absolute;
+	top:10%;
+	left:40%;
+}
