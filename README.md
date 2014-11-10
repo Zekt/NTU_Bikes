@@ -1,4 +1,4 @@
-IT_HW1
+NTU_Bikes
 ======
 
-just some testings
+Website about bikes in NTU.
