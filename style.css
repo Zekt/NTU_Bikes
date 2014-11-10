@@ -79,6 +79,10 @@ body{
 	display: none;
 }
 
+::scrollbar{
+	display: none;
+}
+
 .section{
 	-webkit-perspective: 1px;
 	perspective: 1px;
@@ -154,19 +158,19 @@ body{
 }
 
 #ask{
-	top:75vh;
-	left:10vw;
+	top:15vh;
+	left:5vw;
 }
 
 #hang{
 	top: 15vh;
-	left: 5vw;
+	left: 42vw;
 	width: 22vw;
 }
 
 #abe{
-	top:30vh;
-	left:35vw;
+	top:38vh;
+	left:7vw;
 	width:22vw;
 }
 
@@ -236,4 +240,11 @@ body{
 	position: absolute;
 	top: 50%;
 	right: 7%;
+}
+
+#bike_logo{
+	size: 50%;
+	position: absolute;
+	top:10%;
+	left:40%;
 }
