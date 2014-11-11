@@ -1,4 +1,19 @@
-nav{
+@font-face {
+	font-family: SourceHanSans
+	src: url(fonts/SourceHanSansTWHK-Normal.otf);
+}
+
+@font-face {
+	font-family: SourceHanSans
+	src: url(fonts/SourceHanSansTWHK-Bold.otf);
+	font-weight: bold;
+}
+
+div {
+	font-family: SourceHanSans;
+}
+
+nav {
 	background: black;
 	color: white;
 	font-size: 1.5em;
@@ -11,7 +26,7 @@ nav{
 	z-index: 1;
 }
 
-.bar_elem{
+.bar_elem {
 	padding-left: 1em;
 	padding-right: 1em;
 	margin: 0;
@@ -19,7 +34,7 @@ nav{
 	width: 5em;
 }
 
-.nav a{
+.nav a {
 	display: inline-block;
 	margin: 0;
 	padding: 0px;
@@ -45,9 +60,9 @@ nav{
 	-webkit-animation: mouseon 0.3s;
 }
 
-@-webkit-keyframes mouseon{
-	from{background: black; color: white;}
-	to{background: silver; color:black;}
+@-webkit-keyframes mouseon {
+	from {background: black; color: white;}
+	to {background: silver; color: black;}
 }
 
 .bar_elem:active {
@@ -55,45 +70,45 @@ nav{
 	background: gray;	
 }
 
-.basic{
+.basic {
 	background: white;
 }
 
-.section{
+.section {
 	margin: 0;
 	height: 100vh;
 }
 
-.intro{
+.intro {
 	left: 10%;
 	right: 60%;
 	margin-top: 50vh;
 }
 
-body{
+body {
 	margin: 0;
 	background: black;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	display: none;
 }
 
-::scrollbar{
+::scrollbar {
 	display: none;
 }
 
-.section{
+.section {
 	-webkit-perspective: 1px;
 	perspective: 1px;
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: visible; 
-	margin-left:3%;
-	margin-right:3%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
-#sec1{
+#sec1 {
 	background: url('pictures/NTU.jpg');
 	background-size: cover;
 	background-height: 100vh;
@@ -101,7 +116,7 @@ body{
 	background-attachment: fixed;
 }
 
-#sec2{
+#sec2 {
 	background: url('pictures/map.png') no-repeat;
 	background-position: top;
 	background-size: 100% 100%;
@@ -109,41 +124,41 @@ body{
 	margin-top:0;
 }
 
-#sec3{
+#sec3 {
 	background: url('pictures/bikes.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 }
 
-#sec4{
+#sec4 {
 	background: url('pictures/abe.jpg');
 	background-size: cover;
 	background-position: right;
 	background-attachment: fixed;
 }
 
-#sec5{
+#sec5 {
 	background: url('pictures/road.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-.cover{
+.cover {
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
 	background: rgba(255,255,255,0.5);
 }
 
-.block{
-	position:absolute;
+.block {
+	position: absolute;
 	background: rgba(255,255,255,0.5);
 	padding: 2%;
 	border-radius: 1em;
 }
 
-#lot{
+#lot {
 	position: absolute;
 	top: 30vh;
 	left: 45vw;
@@ -151,42 +166,42 @@ body{
 	border-radius: 1em;
 }
 
-#rules{
+#rules {
 	top: 20vh;
-	left:10vw;
+	left: 10vw;
 	width: 25vw;
 }
 
-#ask{
-	top:15vh;
-	left:5vw;
+#ask {
+	top: 15vh;
+	left: 5vw;
 }
 
-#hang{
+#hang {
 	top: 15vh;
 	left: 42vw;
 	width: 22vw;
 }
 
-#abe{
-	top:38vh;
-	left:7vw;
-	width:22vw;
+#abe {
+	top: 38vh;
+	left: 7vw;
+	width: 22vw;
 }
 
-#moral{
+#moral {
 	top: 20vh;
 	left: 10vw;
 	width: 20vw;
 }
 
-#ref{
+#ref {
 	top: 60vh;
 	left: 60vw;
 	width: 20vw;
 }
 
-.store{
+.store {
 	display: table-cell;
 	position: absolute;
 	overflow: hidden;
@@ -202,14 +217,14 @@ body{
 	-webkit-transition: width 0.5s, height 0.5s, border-radius 0.5s, padding 0.5s;
 }
 
-.store:hover{
+.store:hover {
 	width: 25em;
 	height: 15em;
 	border-radius: 5%;
 	padding: 1%;
 }
 
-#intro2{
+#intro2 {
 	position: absolute;
 	font-size: 1.3em;
 	top: 60%;
@@ -220,31 +235,31 @@ body{
 	background: rgba(255,255,255,0.6);
 }
 
-#bike191{
+#bike191 {
 	top: 5%;
 	right: 13%;
 	z-index: 1;
 }
 
-#water{
+#water {
 	bottom: 25%;
 	left: 12%;
 }
 
-#fu{
+#fu {
 	bottom: 55%;
 	right: 38%;
 }
 
-#man{
+#man {
 	position: absolute;
 	top: 50%;
 	right: 7%;
 }
 
-#bike_logo{
+#bike_logo {
 	size: 50%;
 	position: absolute;
-	top:10%;
-	left:40%;
+	top: 10%;
+	left: 40%;
 }
